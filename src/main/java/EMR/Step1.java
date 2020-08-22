@@ -4,22 +4,17 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 
 
-import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
-import org.apache.hadoop.io.MapWritable;
 import org.apache.hadoop
         .io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.Partitioner;
 import org.apache.hadoop.mapreduce.Reducer;
-import sun.tools.jar.Main;
 import utils.BiarcNode;
 import utils.DepGraph;
+import utils.S3Handler;
 
 public class Step1 {
     public static class MapperStep1 extends Mapper<LongWritable, Text, Text, Text> {
@@ -101,9 +96,9 @@ public class Step1 {
             bw1.close();
             bw2.write(featuresCount + "\n");
             bw2.close();
-            S3Handler = new S3Handler();
-            S3Handler.upload(depPaths,"emr/depPaths.txt");
-            S3Handler.upload(features,"emr/features");
+            S3Handler s3 = new S3Handler();
+            s3.upload(depPaths,"emr/depPaths.txt");
+            s3.upload(features,"emr/features.txt");
 
 
         }

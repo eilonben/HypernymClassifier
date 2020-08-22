@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4b3be82-1cd8-4762-bee3-6163c79ae345" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EMR/Step1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/BiarcNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DepGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Stemmer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EMR/MainPipeline.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/EMR/Step2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/S3Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EMR/Step1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EMR/Step1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +35,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Dsp1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="ServiceViewManager">
@@ -64,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597656552692</updated>
       <workItem from="1597656556931" duration="1928000" />
-      <workItem from="1598013241992" duration="9647000" />
+      <workItem from="1598013241992" duration="14859000" />
     </task>
     <servers />
   </component>
@@ -72,14 +73,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1598087496831">
+    <state x="361" y="71" key="#Project_Structure" timestamp="1598090651962">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.826@0.0.1536.826" timestamp="1598087496831" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1597682500545">
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.826@0.0.1536.826" timestamp="1598090651962" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser" timestamp="1598096027302">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.826@0.0.1536.826" timestamp="1597682500545" />
+    <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.826@0.0.1536.826" timestamp="1598096027302" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598090242450">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.826@0.0.1536.826" timestamp="1598090242450" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1598090385461">
+      <screen x="0" y="0" width="1536" height="826" />
+    </state>
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.826@0.0.1536.826" timestamp="1598090385461" />
     <state x="431" y="147" width="672" height="678" key="search.everywhere.popup" timestamp="1598086964412">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
