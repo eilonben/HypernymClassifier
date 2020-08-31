@@ -7,13 +7,10 @@ import com.amazonaws.services.s3.model.PutObjectRequest;
 import com.amazonaws.services.s3.model.S3Object;
 
 import java.io.*;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.nio.file.Paths;
 
 public class S3Handler {
     private static AmazonS3 s3;
-    private final String BUCKET = "";
+    private final String BUCKET = "bucket1586960757979w";
 
     public S3Handler() {
         s3 = new AmazonS3Client();

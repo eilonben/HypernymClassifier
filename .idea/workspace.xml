@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="HypernymClassification:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c4b3be82-1cd8-4762-bee3-6163c79ae345" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/EMR/MainPipeline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/EMR/Step2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/S3Handler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/HypernymClassification.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/HypernymClassification_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/EMR/MainPipeline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EMR/MainPipeline.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/EMR/Step1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/EMR/Step1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/S3Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/S3Handler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,12 +57,75 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Dsp1" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15429688" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gilad\Desktop\HypernymClassification\src\main\java\Classifier" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ClassifierMain">
+    <configuration name="ClassifierMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Classifier.ClassifierMain" />
+      <module name="HypernymClassification" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Classifier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HypernymApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EMR.HypernymApplication" />
+      <module name="HypernymClassification" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EMR.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainPipeline" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EMR.MainPipeline" />
+      <module name="HypernymClassification" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="EMR.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="EMR.MainPipeline" />
+      <module name="HypernymClassification" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HypernymApplication" />
+        <item itemvalue="Application.MainPipeline" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -65,7 +150,12 @@
       <option name="presentableId" value="Default" />
       <updated>1597656552692</updated>
       <workItem from="1597656556931" duration="1928000" />
-      <workItem from="1598013241992" duration="14859000" />
+      <workItem from="1598013241992" duration="15101000" />
+      <workItem from="1598099999343" duration="2254000" />
+      <workItem from="1598115508108" duration="4201000" />
+      <workItem from="1598181548394" duration="1035000" />
+      <workItem from="1598206027796" duration="1209000" />
+      <workItem from="1598363997943" duration="5089000" />
     </task>
     <servers />
   </component>
@@ -73,6 +163,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="453" y="83" key="#&lt;template&gt;_of_Application" timestamp="1598119073629">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="453" y="83" key="#&lt;template&gt;_of_Application/0.0.1536.824@0.0.1536.824" timestamp="1598119073629" />
     <state x="361" y="71" key="#Project_Structure" timestamp="1598090651962">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
@@ -81,17 +175,51 @@
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="574" y="113" key="#com.intellij.ide.util.MemberChooser/0.0.1536.826@0.0.1536.826" timestamp="1598096027302" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598090242450">
-      <screen x="0" y="0" width="1536" height="826" />
+    <state x="499" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1598119032712">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="499" y="197" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1598119032712" />
+    <state x="618" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1598100034749">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="618" y="302" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.824@0.0.1536.824" timestamp="1598100034749" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598206455865">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598206455865" />
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.826@0.0.1536.826" timestamp="1598090242450" />
+    <state width="1493" height="212" key="GridCell.Tab.0.bottom" timestamp="1598369896001">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598369896001" />
+    <state width="1493" height="212" key="GridCell.Tab.0.center" timestamp="1598369896001">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598369896001" />
+    <state width="1493" height="212" key="GridCell.Tab.0.left" timestamp="1598369896000">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598369896000" />
+    <state width="1493" height="212" key="GridCell.Tab.0.right" timestamp="1598369896001">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598369896001" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1598090385461">
       <screen x="0" y="0" width="1536" height="826" />
     </state>
     <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.826@0.0.1536.826" timestamp="1598090385461" />
-    <state x="431" y="147" width="672" height="678" key="search.everywhere.popup" timestamp="1598086964412">
-      <screen x="0" y="0" width="1536" height="826" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1598115593557">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1598115593557" />
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog" timestamp="1598206029119">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="238" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1598206029119" />
+    <state x="431" y="147" width="672" height="677" key="search.everywhere.popup" timestamp="1598181978073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="147" width="672" height="677" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598181978073" />
     <state x="431" y="147" width="672" height="678" key="search.everywhere.popup/0.0.1536.826@0.0.1536.826" timestamp="1598086964412" />
   </component>
 </project>

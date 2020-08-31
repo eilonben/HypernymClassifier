@@ -11,7 +11,9 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class MainPipeline {
     public static void main(String[] args) throws Exception {
+
         Configuration conf1 = new Configuration();
+        conf1.set("DPmin",args[3]);
         Job job1 = Job.getInstance(conf1, "Step1");
         job1.setJarByClass(Step1.class);
         job1.setMapperClass(Step1.MapperStep1.class);
@@ -38,8 +40,8 @@ public class MainPipeline {
         job2.setOutputKeyClass(Text.class);
         job2.setOutputValueClass(Text.class);
         job2.setNumReduceTasks(1);
-        FileInputFormat.addInputPath(job2, new Path(args[0]));
-        FileOutputFormat.setOutputPath(job2, new Path(args[1]));
+        FileInputFormat.addInputPath(job2, new Path(args[1]));
+        FileOutputFormat.setOutputPath(job2, new Path(args[2]));
         if (job2.waitForCompletion(true))
             System.out.println("Step 2 Completed");
         else

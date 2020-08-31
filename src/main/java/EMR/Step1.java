@@ -7,9 +7,9 @@ import java.io.IOException;
 import java.util.HashSet;
 
 
+import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.LongWritable;
-import org.apache.hadoop
-        .io.Text;
+import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Reducer;
 import utils.BiarcNode;
@@ -32,15 +32,13 @@ public class Step1 {
         public void writeDepPath(BiarcNode curr, String path, BiarcNode start, Context context) throws IOException, InterruptedException {
             if (curr.isNoun()) {
                 if (path.equals("")) { // current node is the first noun in the path
-                    path = curr.getTag();
                     for (BiarcNode c : curr.getChildren()) {
-                        writeDepPath(c, path, curr, context);
+                        writeDepPath(c, curr.getTag(), curr, context);
                     }
                 }
                 else{ // current node is the 2nd noun in the path, so we write it down
-                    path+= "-"+curr.getTag();
                     String words = start.getWord() + "#" + curr.getWord();
-                    context.write(new Text(path),new Text(words));
+                    context.write(new Text(path + "-" +curr.getTag()),new Text(words));
                     writeDepPath(curr,"",curr,context);
                 }
             }
@@ -57,13 +55,15 @@ public class Step1 {
     }
 
     public static class ReducerStep1 extends Reducer<Text,Text,Text,Text> {
-        private int dpMin = 10;
+        private int dpMin ;
         private BufferedWriter bw1,bw2;
         private File depPaths,features;
         private int featuresCount;
 
         @Override
         public void setup(Context context) throws IOException, InterruptedException {
+            Configuration c = context.getConfiguration();
+            dpMin = Integer.parseInt(c.get("DPmin"));
             depPaths = new File("depPaths.txt");
             features = new File("features.txt");
             depPaths.createNewFile();
@@ -74,20 +74,19 @@ public class Step1 {
 
         @Override
         public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-            HashSet<Text> pairs = new HashSet<>();
+            HashSet<Text> pairs = new HashSet<>(dpMin);
             for(Text pair:values){
-                pairs.add(pair);
                 if(pairs.size()==dpMin){
                     break;
                 }
+                pairs.add(pair);
             }
-            if(pairs.size()<dpMin){
-                return;
-            }
-            bw1.write(key.toString()+"\n");
-            featuresCount++;
-            for(Text pair: pairs){
-                context.write(pair,key);
+            if(pairs.size()>=dpMin) {
+                bw1.write(key.toString() + "\n");
+                featuresCount++;
+                for (Text pair : values) {
+                    context.write(pair, key);
+                }
             }
         }
 
